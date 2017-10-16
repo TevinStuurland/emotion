@@ -4,9 +4,14 @@ var apiKey = "d6bc951e60d54b5a9180e63fecdce4af";
 //apiUrl: The base URL for the API. Find out what this is for other APIs via the API documentation
 var apiUrl = "https://api.projectoxford.ai/emotion/v1.0/recognize";
 
+var photo = document.getElementById("photo");
+var photo2 = document.getElementById("photo-2");
+
+var attribute = photo.getAttribute('src');
+
 $('#btn').click(function () {
 //file: The file that will be sent to the api
-var file = document.getElementById('filename').files[0];
+var file = attribute;
 
 CallAPI(file, apiUrl, apiKey);
 });
