@@ -62,13 +62,13 @@ body{
 
 main{
   display: flex;
-  padding: 5%;
+  padding: 2%;
   color: #000;
   height: 100vh;
 }
 
 section{
-  padding: 5%;
+  padding: 2%;
 }
 
 h1{
@@ -103,13 +103,16 @@ a{
 }
 
 #camera {
-  width: 340px;
   display:inline-block;
 }
 
 #output {
-  width: 340px;
-  display:inline-block;
+  width: 100vw;
+  display: flex;
+}
+
+#output img{
+  margin-left: 20px;
 }
 
 #startbutton {
