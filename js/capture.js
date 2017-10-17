@@ -89,7 +89,7 @@
 
   function clearphoto() {
     var context = canvas.getContext('2d');
-    context.fillStyle = "#695744";
+    context.fillStyle = "#00995F";
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     var data = canvas.toDataURL('image/png');
