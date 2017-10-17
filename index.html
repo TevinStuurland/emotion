@@ -4,13 +4,19 @@
 	<title>Webcamtest</title>
 	<meta charset='utf-8'>
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
-	<script src="js/capture.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/challenge.js"></script>
     <script src="js/emotionapi.js"></script>
 </head>
 <body>
 <section>
     <h1>Emotion</h1>
     <p>Playing games with your face</p>
+    <ol>
+        <li>Step 1: Take the picture</li>
+        <li>Step 2: Upload it</li> 
+        <li>Step 3: Let the robot do it's thing!</li>
+    </ol>
 </section>
 <main>
     <div id="camera">
@@ -20,8 +26,19 @@
     </div>
     
     <div id="output">
-        <img id="photo" alt="The first screen capture will appear in this box.">
-        <img id="photo-2" alt="The second screen capture will appear in this box.">
+        <figure>
+            <img id="photo" alt="The first screen capture will appear in this box.">
+            <figcaption>Photo 1</figcaption>
+        </figure>
+
+        <figure>
+            <img id="photo-2" alt="The second screen capture will appear in this box.">
+            <figcaption>Photo 2</figcaption>
+        </figure>
+    </div>
+
+    <div class="challenge">
+        <h1>Your challenge is:</h1><p></p>
     </div>
 </main>
 

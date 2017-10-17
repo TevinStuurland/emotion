@@ -55,29 +55,58 @@ table {
   #MAIN
 \*-------------------------*/
 
-body{
+body {
   background-color: #16DB93;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
+main {
   display: flex;
   padding: 2%;
   color: #000;
   height: 100vh;
 }
 
-section{
+main:nth-child(1){
+  background-color: lightblue;
+}
+
+section {
   padding: 2%;
 }
 
-h1{
+h1 {
   font-size: 5em;
   font-weight: 600;
 }
 
-a{
+h1 + p {
+  font-style: italic;
+}
+
+p + ol {
+  font-style: italic;
+  line-height: 2;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+a {
   color: #FF611A;
+}
+
+figcaption {
+  font-weight: 600;
+  margin-top:5px;
+  margin-left: 20px;
+}
+
+.challenge h1 {
+  font-size: 35px;
+}
+
+#btn{
+  height: 25px;
 }
 
 #video {
@@ -111,7 +140,7 @@ a{
   display: flex;
 }
 
-#output img{
+#output img {
   margin-left: 20px;
 }
 
