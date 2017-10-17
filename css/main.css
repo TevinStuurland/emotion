@@ -61,9 +61,14 @@ body{
 }
 
 main{
+  display: flex;
   padding: 5%;
   color: #000;
   height: 100vh;
+}
+
+section{
+  padding: 5%;
 }
 
 h1{
