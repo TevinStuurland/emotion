@@ -90,6 +90,7 @@ function ProcessResult(response)
 var data = JSON.stringify(response);
 kek = response[0].scores;
 console.log(kek)
+console.log(this)
 $("#response").text(data);
 }
 
