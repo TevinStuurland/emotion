@@ -154,14 +154,14 @@ $("#response").text(data);
             let Img = Base64Binary.decodeArrayBuffer(file);
             let ajax = new XMLHttpRequest(); 
             console.log('Photo 1 in case');
-            CallAPI(Img)       
+            CallAPI(Img, apiUrl, apiKey)       
            }
              function snapPost2 () {
             let file = document.getElementById('photo-2').src.substring(23).replace(' ', '+');
             let Img = Base64Binary.decodeArrayBuffer(file);
             let ajax = new XMLHttpRequest(); 
             console.log('Photo 1 in case');
-            CallAPI(Img)       
+            CallAPI(Img, apiUrl, apiKey)       
            }
       
       switch (count % 2) {
