@@ -149,6 +149,7 @@ $("#response").text(data);
     
       var data = canvas.toDataURL('image/png');
 
+      console.log(data)
          function snapPost () {
             let file = document.getElementById('photo').src.substring(23).replace(' ', '+');
             let Img = Base64Binary.decodeArrayBuffer(file);
