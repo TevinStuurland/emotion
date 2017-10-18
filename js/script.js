@@ -151,14 +151,14 @@ $("#response").text(data);
 
          function snapPost () {
             let file = document.getElementById('photo').src.substring(23).replace(' ', '+');
-            let img = Base64Binary.decodeArrayBuffer(file);
+            let Img = Base64Binary.decodeArrayBuffer(file);
             let ajax = new XMLHttpRequest(); 
             console.log('Photo 1 in case');
             CallAPI(Img)       
            }
              function snapPost2 () {
             let file = document.getElementById('photo-2').src.substring(23).replace(' ', '+');
-            let img = Base64Binary.decodeArrayBuffer(file);
+            let Img = Base64Binary.decodeArrayBuffer(file);
             let ajax = new XMLHttpRequest(); 
             console.log('Photo 1 in case');
             CallAPI(Img)       
