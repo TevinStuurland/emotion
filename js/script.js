@@ -4,7 +4,7 @@ var apiKey = "d6bc951e60d54b5a9180e63fecdce4af";
 //apiUrl: The base URL for the API. Find out what this is for other APIs via the API documentation
 var apiUrl = "https://api.projectoxford.ai/emotion/v1.0/recognize";
 
-function CallAPI(img, apiUrl, apiKey)
+function CallAPI(Img, apiUrl, apiKey)
 {
 $.ajax({
 url: apiUrl,
@@ -13,7 +13,7 @@ xhrObj.setRequestHeader("Content-Type", "application/octet-stream");
 xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", apiKey);
 },
 type: "POST",
-data: img,
+data: Img,
 processData: false
 })
 .done(function (response) {
@@ -154,14 +154,14 @@ $("#response").text(data);
             let img = Base64Binary.decodeArrayBuffer(file);
             let ajax = new XMLHttpRequest(); 
             console.log('Photo 1 in case');
-            CallAPI(img)       
+            CallAPI(Img)       
            }
              function snapPost2 () {
             let file = document.getElementById('photo-2').src.substring(23).replace(' ', '+');
             let img = Base64Binary.decodeArrayBuffer(file);
             let ajax = new XMLHttpRequest(); 
             console.log('Photo 1 in case');
-            CallAPI(img)       
+            CallAPI(Img)       
            }
       
       switch (count % 2) {
