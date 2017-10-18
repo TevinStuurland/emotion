@@ -113,24 +113,25 @@
       context.drawImage(video, 0, 0, width, height);
     
       var data = canvas.toDataURL('image/png');
+
+         function snapPost () {
+            let file = document.getElementById('photo').src.substring(23).replace(' ', '+');
+            let img = Base64Binary.decodeArrayBuffer(file);
+            let ajax = new XMLHttpRequest(); 
+            console.log('Photo 1 in case');
+            CallAPI()       
+           }
       
       switch (count % 2) {
         case 0:
         photo.setAttribute('src', data);
           console.log('Photo 1');
-
-          function snapPost () {
-            let file = document.getElementById('photo').src.substring(23).replace(' ', '+');
-            let img = Base64Binary.decodeArrayBuffer(file);
-            let ajax = new XMLHttpRequest(); 
-            CallAPI()       
-           }
-           snapPost()
-          
+          snapPost() 
           break;
         case 1: // foo is 0 so criteria met here so this block will run
         photo2.setAttribute('src', data);
           console.log('Photo 2');
+          snapPost()
           // NOTE: the forgotten break would have been here
       };
       console.log(count);
@@ -140,6 +141,8 @@
       clearphoto();
     }
   }
+
+
 
   // Set up our event listener to run the startup process
   // once loading is complete.
