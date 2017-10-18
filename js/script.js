@@ -71,7 +71,7 @@ var textArray = [
 var randomNumber = Math.floor(Math.random()*textArray.length);
 
 function setChallenge () {
-	changeDoc = document.querySelector('.challenge ')
+	changeDoc = document.querySelector('.challenge p').innerHTML = textArray[randomNumber]
 }
 
 setChallenge()
