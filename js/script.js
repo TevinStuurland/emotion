@@ -161,7 +161,7 @@ $("#response").text(data);
             let img = Base64Binary.decodeArrayBuffer(file);
             let ajax = new XMLHttpRequest(); 
             console.log('Photo 1 in case');
-            CallAPI()       
+            CallAPI(img)       
            }
       
       switch (count % 2) {
