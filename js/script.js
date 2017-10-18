@@ -19,7 +19,7 @@ beforeSend: function (xhrObj) {
 xhrObj.setRequestHeader("Content-Type", "application/octet-stream");
 xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", apiKey);
 },
-type: "GET",
+type: "POST",
 data: file,
 processData: false
 })
