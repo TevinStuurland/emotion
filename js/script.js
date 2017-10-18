@@ -8,10 +8,10 @@ $('#btn').click(function () {
 //file: The file that will be sent to the api
 var file = document.getElementById('filename').files[0];
 
-CallAPI(file, apiUrl, apiKey);
+CallAPI(img, apiUrl, apiKey);
 });
 
-function CallAPI(file, apiUrl, apiKey)
+function CallAPI(img, apiUrl, apiKey)
 {
 $.ajax({
 url: apiUrl,
