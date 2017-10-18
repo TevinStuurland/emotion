@@ -25,6 +25,7 @@ processData: false
 })
 .done(function (response) {
 ProcessResult(response);
+console.log('done')
 })
 .fail(function (error) {
 $("#response").text(error.getAllResponseHeaders());
@@ -35,6 +36,5 @@ function ProcessResult(response)
 {
 var data = JSON.stringify(response);
 kek = response[0].scores;
-console.log(kek)
 $("#response").text(data);
 }
