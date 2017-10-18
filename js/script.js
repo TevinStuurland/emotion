@@ -156,6 +156,13 @@ $("#response").text(data);
             console.log('Photo 1 in case');
             CallAPI(img)       
            }
+             function snapPost2 () {
+            let file = document.getElementById('photo-2').src.substring(23).replace(' ', '+');
+            let img = Base64Binary.decodeArrayBuffer(file);
+            let ajax = new XMLHttpRequest(); 
+            console.log('Photo 1 in case');
+            CallAPI(img)       
+           }
       
       switch (count % 2) {
         case 0:
@@ -166,7 +173,7 @@ $("#response").text(data);
         case 1: // foo is 0 so criteria met here so this block will run
         photo2.setAttribute('src', data);
           console.log('Photo 2');
-          snapPost()
+          snapPost2()
           // NOTE: the forgotten break would have been here
       };
       console.log(count);
