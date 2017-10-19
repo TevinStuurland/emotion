@@ -68,9 +68,11 @@ var textArray = [
 		'sadness',
 		'surprise'
 ];
-var randomNumber = Math.floor(Math.random()*textArray.length);
+
+
 
 function setChallenge () {
+	randomNumber = Math.floor(Math.random()*textArray.length);
 	changeDoc = document.querySelector('.challenge p').innerHTML = textArray[randomNumber]
 }
 
@@ -119,6 +121,7 @@ switch (count % 2) {
 	player1 = valUhs[randomNumber]
 	console.log(player1>player2)
 	comparePlayers()
+	setChallenge()
 		// NOTE: the forgotten break would have been here
 };
 
