@@ -113,10 +113,12 @@ amountPic = 0;
 if (amountPic == 0) {
 	player1 = valUhs[randomNumber]
 	++amountPic
+	break
 }
-else if (amountPic == 1) {
+if (amountPic == 1) {
 	player2 = valUhs[randomNumber]
 	--amountPic
+	break
 }
 $("#response").text(data);
 }
