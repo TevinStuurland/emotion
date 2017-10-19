@@ -112,10 +112,10 @@ amountPic = 0;
 
 switch (count % 2) {
 	case 0:
-	player1 = valUhs[randomNumber]
+	player2 = valUhs[randomNumber]
 		break;
 	case 1: // foo is 0 so criteria met here so this block will run
-	player2 = valUhs[randomNumber]
+	player1 = valUhs[randomNumber]
 		// NOTE: the forgotten break would have been here
 };
 $("#response").text(data);
