@@ -180,7 +180,7 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             // timer = duration;
-						timer = 0;
+						return
         }
     }, 1000);
 }
