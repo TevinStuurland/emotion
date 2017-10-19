@@ -116,12 +116,14 @@ switch (count % 2) {
 	case 0:
 	player2 = valUhs[randomNumber]
 	console.log(player1>player2)
+		setChallenge()
+		comparePlayers()
 		break;
 	case 1: // foo is 0 so criteria met here so this block will run
 	player1 = valUhs[randomNumber]
 	console.log(player1>player2)
-	comparePlayers()
-	setChallenge()
+
+
 		// NOTE: the forgotten break would have been here
 };
 
