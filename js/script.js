@@ -153,11 +153,13 @@ function comparePlayers () {
 
 	if (player1 > player2) {
 		console.log('player1')
-		document.querySelector('.winner').innerHTML = 'Player 1 wins!'
+		document.querySelector('.player1win').innerHTML = 'You won!'
+		document.querySelector('.player2win').innerHTML = 'You lost this one!'
 
 	} else if (player1 < player2) {
 		console.log('player2')
-		document.querySelector('.winner').innerHTML = 'Player 2 wins!'
+		document.querySelector('.player2win').innerHTML = 'You won!'
+		document.querySelector('.player1win').innerHTML = 'You lost this one!'
 	}
 
 }
