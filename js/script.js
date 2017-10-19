@@ -107,7 +107,7 @@ function ProcessResult(response)
 {
 var data = JSON.stringify(response);
 kek = response[0].scores;
-emotion1 = response[0].scores.changeDoc
+emotion1 = response[0].scores
 console.log(kek)
 console.log(response)
 $("#response").text(data);
