@@ -110,16 +110,14 @@ kek = response[0].scores;
 valUhs = Object.values(kek);
 amountPic = 0;
 
-if (amountPic == 0) {
+switch (count % 2) {
+	case 0:
 	player1 = valUhs[randomNumber]
-	++amountPic
-	break
-}
-if (amountPic == 1) {
+		break;
+	case 1: // foo is 0 so criteria met here so this block will run
 	player2 = valUhs[randomNumber]
-	--amountPic
-	break
-}
+		// NOTE: the forgotten break would have been here
+};
 $("#response").text(data);
 }
 
@@ -144,7 +142,7 @@ $("#response").text(data);
   var photo = null;
   var photo2 = null;
   var startbutton = null;
-  var count = 0;
+	count = 0;
 
   function startup() {
     video = document.getElementById('video');
