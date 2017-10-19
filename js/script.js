@@ -167,30 +167,6 @@ function comparePlayers () {
 }
 }
 
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            // timer = duration;
-						return
-        }
-    }, 1000);
-}
-
-function starttimem () {
-    var fiveMinutes = 5,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};
-
 (function() {
   // The width and height of the captured photo. We will set the
   // width to the value defined here, but the height will be
@@ -314,7 +290,6 @@ function starttimem () {
             let ajax = new XMLHttpRequest();
             console.log('Photo 1 in case');
             CallAPI(test, apiUrl, apiKey)
-						starttimem()
            }
              function snapPost2 () {
             let file = document.getElementById('photo-2').src.substring(23).replace(' ', '+');
@@ -322,7 +297,6 @@ function starttimem () {
             let ajax = new XMLHttpRequest();
             console.log('Photo 1 in case');
             CallAPI(test, apiUrl, apiKey)
-						starttimem()
            }
 
       switch (count % 2) {
