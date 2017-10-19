@@ -146,6 +146,8 @@ switch (count % 2) {
 		break;
 	case 1: // foo is 0 so criteria met here so this block will run
 	player1 = valUhs[randomNumber]
+	document.querySelector('.player1win').innerHTML = ''
+	document.querySelector('.player2win').innerHTML = ''
 		// NOTE: the forgotten break would have been here
 };
 
