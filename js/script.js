@@ -86,6 +86,19 @@ function setChallenge () {
 	randomNumber = Math.floor(Math.random()*textArray.length);
 	changeDoc = document.querySelector('.challenge p').innerHTML = textArray[randomNumber]
 	removeA(textArray, changeDoc)
+
+	if (textArray.length == 0) {
+		textArray = [
+		    'anger',
+		    'contempt',
+				'disgust',
+				'fear',
+				'happiness',
+				'neutral',
+				'sadness',
+				'surprise'
+		];
+	}
 }
 
 setChallenge()
