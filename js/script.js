@@ -98,7 +98,6 @@ function setChallenge () {
 				'sadness',
 				'surprise'
 		];
-		removeA(textArray, changeDoc)
 	}
 }
 
