@@ -107,12 +107,17 @@ function ProcessResult(response)
 {
 var data = JSON.stringify(response);
 kek = response[0].scores;
-emotion1 = response[0].scores.changeDoc
-arrayEmotion1 = [response.scores]
-console.log(kek)
-console.log(response)
 valUhs = Object.values(kek);
-console.log()
+amountPic = 0;
+
+if (amountPic == 0) {
+	player1 = valUhs[randomNumber]
+	++amountPic
+}
+if (amountPic == 1) {
+	player2 = valUhs[randomNumber]
+	--amountPic
+}
 $("#response").text(data);
 }
 
