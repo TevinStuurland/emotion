@@ -69,7 +69,7 @@ function removeA(arr) {
     return arr;
 }
 
-var textArray = [
+	textArray = [
     'anger',
     'contempt',
 		'disgust',
