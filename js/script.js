@@ -113,18 +113,20 @@ amountPic = 0;
 switch (count % 2) {
 	case 0:
 	player2 = valUhs[randomNumber]
+	console.log(player1>player2)
 		break;
 	case 1: // foo is 0 so criteria met here so this block will run
 	player1 = valUhs[randomNumber]
-	comparePlayers ()
+	console.log(player1>player2)
+	comparePlayers()
 		// NOTE: the forgotten break would have been here
 };
-$("#response").text(data);
 
 function comparePlayers () {
 
 	if (player1 > player2) {
 		console.log('player1')
+
 	} else if (player1 < player2) {
 		console.log('player2')
 	}
