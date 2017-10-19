@@ -58,6 +58,17 @@ var Base64Binary = {
 	}
 }
 
+function removeA(arr) {
+    var what, a = arguments, L = a.length, ax;
+    while (L > 1 && arr.length) {
+        what = a[--L];
+        while ((ax= arr.indexOf(what)) !== -1) {
+            arr.splice(ax, 1);
+        }
+    }
+    return arr;
+}
+
 var textArray = [
     'anger',
     'contempt',
@@ -74,6 +85,7 @@ var textArray = [
 function setChallenge () {
 	randomNumber = Math.floor(Math.random()*textArray.length);
 	changeDoc = document.querySelector('.challenge p').innerHTML = textArray[randomNumber]
+	removeA(textArray, changeDoc)
 }
 
 setChallenge()
