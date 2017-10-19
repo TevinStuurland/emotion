@@ -114,7 +114,7 @@ if (amountPic == 0) {
 	player1 = valUhs[randomNumber]
 	++amountPic
 }
-if (amountPic == 1) {
+else if (amountPic == 1) {
 	player2 = valUhs[randomNumber]
 	--amountPic
 }
