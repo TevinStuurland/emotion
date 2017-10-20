@@ -127,6 +127,29 @@ figcaption {
   font-size: 35px;
 }
 
+.challenge p{
+  font-size: 50px;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  animation-name: smallBig;
+  margin-top: 1.5em;
+}
+
+@keyframes smallBig {
+  0% {
+    font-size: 100%;
+  }
+
+  50% {
+    font-size: 150%;
+  }
+
+  100% {
+    font-size: 100%;
+  }
+}
+
 #btn{
   height: 25px;
 }
