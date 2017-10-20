@@ -55,8 +55,7 @@ table {
   #MAIN
 \*-------------------------*/
 
-body {
-  background-color: #16DB93;
+body {  
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -65,14 +64,36 @@ main {
   padding: 2%;
   color: #000;
   /*height: 100vh;*/
+  margin-top: 10rem;
 }
 
-main:nth-child(1){
-  background-color: lightblue;
+main{
+  background-color: #16DB93;
+  flex-wrap: wrap;
+}
+
+main div{
+  margin-top: 20px;
+  flex: 1 0 40%;
+}
+
+main div#camera{
+  flex: 1 0 10%;
+}
+
+section iframe{
+  float: right;
+  margin-top: -14rem;
 }
 
 section {
   padding: 2%;
+}
+
+section img + p{
+  padding: 10px;
+  width: 13.1rem;
+  background-color: #16DB93;
 }
 
 h1 {
@@ -87,8 +108,9 @@ h1 + p {
 p + ol {
   font-style: italic;
   line-height: 2;
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 a {
@@ -147,8 +169,7 @@ figcaption {
 #startbutton {
   display:block;
   position:relative;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: 8em;
   bottom:32px;
   background-color: #00995F;
   border: 1px solid rgba(255, 255, 255, 0.7);
